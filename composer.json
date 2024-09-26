@@ -1,6 +1,6 @@
 {
-    "name": "gmostafa/php-graphql-client",
-    "description": "GraphQL client and query builder.",
+    "name": "charity-mobile/php-graphql-client",
+    "description": "GraphQL client and query builder (forked from gmostafa/php-graphql-client)",
     "type": "library",
     "license": "MIT",
     "keywords": [
@@ -16,6 +16,10 @@
         {
             "name": "Mostafa Ghoneimy",
             "email": "emostafagh@gmail.com"
+        },
+        {
+            "name": "Joe McClorey",
+            "email": "joe.mcclorey@charitymobile.com"
         }
     ],
     "autoload": {
