@@ -19,13 +19,11 @@ class StringLiteralFormatter
     public static function formatValueForRHS($value): string
     {
         if (is_string($value)) {
-            if (!static::isVariable($value)) {
-                $value = str_replace('"', '\"', $value);
-                if (strpos($value, "\n") !== false) {
-                    $value = '"""' . $value . '"""';
-                } else {
-                    $value = "\"$value\"";
-                }
+            $value = str_replace('"', '\"', $value);
+            if (strpos($value, "\n") !== false) {
+                $value = '"""' . $value . '"""';
+            } else {
+                $value = "\"$value\"";
             }
         } elseif (is_bool($value)) {
             if ($value) {
